@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christmas Message for Gloria</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    background: linear-gradient(135deg,#fde2e4,#e3f2fd);
+    font-family:'Roboto',sans-serif;
+    overflow-y:auto;
+    display:flex;
+    justify-content:center;
+}
+
+/* ---------- LIGHTS ---------- */
+.lights{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    padding:6px 0;
+    z-index:100;
+}
+
+.bulb{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    animation:glow 2s infinite alternate;
+}
+
+.bulb:nth-child(odd){background:gold;}
+.bulb:nth-child(even){background:red;}
+
+@keyframes glow{
+    from{opacity:.4;}
+    to{opacity:1; box-shadow:0 0 10px currentColor;}
+}
+
+/* ---------- SNOWFLAKES ---------- */
+.snowflake{
+    position:fixed;
+    top:-10%;
+    opacity:.6;
+    animation:fall linear infinite;
+    z-index:1;
+}
+
+@keyframes fall{
+    to{transform:translateY(120vh) rotate(360deg);}
+}
+
+.s1{left:10%; width:25px; animation-duration:20s;}
+.s2{left:30%; width:35px; animation-duration:16s;}
+.s3{left:50%; width:28px; animation-duration:22s;}
+.s4{left:70%; width:32px; animation-duration:18s;}
+.s5{left:90%; width:26px; animation-duration:24s;}
+
+/* ---------- PAGES ---------- */
+.container{
+    width:100%;
+    max-width:820px;
+    padding:80px 16px 40px;
+    z-index:10;
+}
+
+.card{
+    background:rgba(255,255,255,.96);
+    border:6px solid #e6b800;
+    border-radius:22px;
+    padding:26px 30px;
+    margin-bottom:40px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.2);
+}
+
+h1{
+    font-family:'Lobster',cursive;
+    color:#e6b800;
+    font-size:34px;
+    margin-bottom:18px;
+}
+
+p{
+    font-size:15.8px;
+    line-height:1.75;
+    color:#555;
+    margin:14px 0;
+}
+
+.highlight{
+    color:#e6b800;
+    font-weight:700;
+}
+
+.footer{
+    margin-top:18px;
+    font-style:italic;
+    color:#888;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LIGHTS -->
+<div class="lights">
+    <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+    <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+</div>
+
+<!-- SNOWFLAKES -->
+<img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Winter-PNG/Blue_Snowflake_PNG_Transparent_Clipart.png" class="snowflake s1">
+<img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Winter-PNG/Snowflake_PNG_Transparent_Clipart.png" class="snowflake s2">
+<img src="https://citypng.com/public/uploads/preview/blue-snowflake-illustration-shape-png-image-7017516945412284ljqcvmfe9.png" class="snowflake s3">
+<img src="https://www.vhv.rs/dpng/d/416-4163037_silver-snowflake-transparent-png-transparent-background-silver-snowflake.png" class="snowflake s4">
+<img src="https://www.nicepng.com/png/detail/970-9709287_snowflake-images-clip-art-snowflake-clipart-transparent-floco.png" class="snowflake s5">
+
+<!-- CONTENT -->
+<div class="container">
+
+    <!-- PAGE 1 -->
+    <div class="card">
+        <h1>Christmas Message for Gloria</h1>
+
+        <p><span class="highlight">Merry Christmas, Gloria.</span> I hope this message reaches you surrounded by warmth and calm. Christmas is a season that highlights the people who truly matter, and you are one of those people who bring light, kindness, and meaning wherever you go.</p>
+
+        <p>I took time to write this message just for you, choosing my words carefully because you deserve something thoughtful and sincere. In the middle of all the noise and busyness, I wanted to pause and remind you how valued and appreciated you are.</p>
+
+        <p>May this Christmas bring you peace that settles gently in your heart and joy that feels steady and real. Whether today is full of laughter or quiet moments, I hope you feel comforted, loved, and at ease.</p>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="card">
+        <p>This season also encourages reflection and self-kindness. I hope you recognize your strength, your growth, and the beauty in who you are. You are deserving of happiness, patience, and grace.</p>
+
+        <p>As the year ends, may the new one bring you hope, success, and moments that make you smile effortlessly. Gloria, this message was written especially for you, with genuine care and warm Christmas wishes.</p>
+
+        <div class="footer">With heartfelt Christmas wishes</div>
+    </div>
+
+</div>
+
+</body>
+</html>
